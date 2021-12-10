@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P5_grid</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie recommendations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style type="text/css">
+    :root{
+         --blanc: rgba(132, 202, 223, 0.44);
+        --blaumarino: #001524;
+        --blaumig: rgb(2, 52, 136);
+        --roig: #dc0000;
+        --groc: #ffea00;
+        --verd: rgb(21, 220, 242);
+        --montserrat:'Montserrat', sans-serif;
+    }
+    a{
+    text-decoration: none;
+    }
+    html{
+        height: 100%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(17, 1fr);
+        grid-template-rows: repeat(25, 100px);
+        /*gap: 5px; */
+    }
+    .container>div{
+        border: 1,5px solid rgb(0, 0, 0);
+        width:100%;
+        text-align:center;
+        font-family:var(--montserrat) ;
+        font-size: 80%;
+        color: rgba(255, 255, 255, 0.605);
+
+    } 
+    h1{
+        font-family:var(--montserrat) ;
+        font-size: 200%;
+        color: white;
+    }
+    #blanc1{
+        grid-column: 1/3;
+        grid-row:1/9;
+        background-color: var(--blanc);
+    }
+    #blanc2{
+        grid-column: 9/13;
+        grid-row:1/5;
+        background-color:var(--blanc);
+    }
+    #blaumarino1{
+        grid-column:3/5;
+        grid-row: 1/3;
+        background-color: var(--blaumarino);
+    }
+    #blaumarino2{
+        grid-column: 3/5;
+        grid-row:5/9;
+        background-color: var(--blaumarino);
+    }
+    #blaumarino3{
+        grid-column: 9/13;
+        grid-row:11/14;
+        background-color: var(--blaumarino);
+    }
+    #blaumarino4{
+        grid-column: 13/18;
+        grid-row:3/5;
+        background-color: var(--blaumarino);
+    }
+    #roig1{
+        grid-column: 1/5;
+        grid-row:9/14;
+        background-color: var(--roig);
+    }
+    #roig2{
+        grid-column: 3/9;
+        grid-row: 3/5;
+        background-color: var(--roig); 
+    }
+    #roig3{
+        grid-column: 13/18;
+        grid-row: 1/3;
+        background-color: var(--roig); 
+    }
+    #roig4{
+        grid-column: 16/18;
+        grid-row: 5/10;
+        background-color: var(--roig); 
+    }
+    #blaumig1{
+        grid-column: 5/9;
+        grid-row:11/14;
+        background-color: var(--blaumig);
+    }
+    #blaumig2{
+        grid-column: 13/16;
+        grid-row: 5/10;
+        background-color: var(--blaumig); 
+    }
+    #groc1{
+        grid-column: 5/9;
+        grid-row:5/11;
+        background-color:var(--groc);
+    }
+    #groc2{
+        grid-column: 13/18;
+        grid-row:10/14;
+        background-color:var(--groc);
+    }
+    #verd1{
+        grid-column: 5/9;
+        grid-row:1/3;
+        background-color: var(--verd);
+    }
+    #verd2{
+        grid-column: 9/13;
+        grid-row:5/11;
+        background-color: var(--verd);
+    
+    }
+    /*tablet*/
+    @media (max-width:1024px){   
+    }
+    #groc3{
+        grid-column: 1/8;
+        grid-row:14/16;
+        background-color:var(--groc);
+    }
+    #blaumig3{
+        grid-column: 1/8;
+        grid-row:16/19;
+        background-color:var(--blaumig);
+    }
+    #verd3{
+        grid-column: 8/14;
+        grid-row:14/16;
+        background-color:var(--verd);
+    }
+    #roig5{
+        grid-column: 8/14;
+        grid-row:16/19;
+        background-color:var(--roig);
+    }
+    #blanc3{
+        grid-column: 14/18;
+        grid-row:14/19;
+        background-color:var(--blanc);
+    }
+
+    /*mobil*/
+    @media (max-width:600px){
+    }
+    #blaumarino5{
+        grid-column: 1/18;
+        grid-row:19/22;
+        background-color:var(--blaumarino);
+    }
+    #groc4{
+        grid-column: 1/12;
+        grid-row:22/26;
+        background-color:var(--groc);
+    }
+    #blaumig4{
+        grid-column: 12/18;
+        grid-row:22/26;
+        background-color:var(--blaumig);
+    }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div id="blanc1">GRIS 1</div>
+            <div id="blanc2">GRIS 2</div>
+            <div id="blanc3">GRIS 3</div>
+            <div id="blaumarino1">AZUL MARINO 1</div>
+            <div id="blaumarino2">AZUL MARINO 2</div>
+            <div id="blaumarino3">AZUL MARINO 3</div>
+            <div id="blaumarino4">AZUL MARINO 4</div>
+            <div id="blaumarino5">AZUL MARINO 5</div>
+            <div id="roig1">ROJO 1</div>
+            <div id="roig2">ROJO 2
+                <a href="IMG/boceto.jpg"><h1>BOCETO</h1></a>
+            </div>
+            <div id="roig3">ROJO 3</div>
+            <div id="roig4">ROJO 4</div>
+            <div id="roig5">ROJO 5</div>
+            <div id="groc1">AMARILLO 1</div>
+            <div id="groc2">AMARILLO 2</div>
+            <div id="groc3">AMARILLO 3</div>
+            <div id="groc4">AMARILLO 4</div>
+            <div id="verd1">TURQUESA 1</div>
+            <div id="verd2">TURQUESA 2</div>
+            <div id="verd3">TURQUESA 3</div>
+            <div id="blaumig1">AZUL MEDIO 1</div>
+            <div id="blaumig2">AZUL MEDIO 2</div>
+            <div id="blaumig3">AZUL MEDIO 3</div>
+            <div id="blaumig4">AZUL MEDIO 4</div>
+        </div>
+    </body>
+    </html>
